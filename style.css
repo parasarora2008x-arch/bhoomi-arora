@@ -1,43 +1,24 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-    text-align: center;
+    background: #000;
+    font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #111;
-    color: white;
-    padding: 20px;
-}
-
-.video-section {
-    padding: 20px;
-}
-
-.video-card {
-    background: white;
-    margin: 20px auto;
-    padding: 15px;
-    width: 80%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: auto;
 }
 
 video {
-    border-radius: 10px;
-}
-
-.contact {
-    background: #222;
-    color: white;
-    padding: 20px;
-}
-
-footer {
+    width: 100%;
+    aspect-ratio: 9 / 16;   /* Reel ratio */
+    object-fit: contain;    /* IMPORTANT - no zoom, no crop */
     background: black;
-    color: white;
-    padding: 10px;
+    border-radius: 18px;
 }
 
