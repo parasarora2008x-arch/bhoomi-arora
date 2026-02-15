@@ -3,43 +3,41 @@ body {
     background: #f2f2f2;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 header {
-    background: #0d0d0d;
+    background: black;
     color: white;
-    padding: 18px 0;
-    font-size: 26px;
-    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px;
 }
 
 .container {
-    width: 90%;
-    max-width: 800px;
-    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 videos per row */
+    gap: 20px;
+    padding: 30px;
 }
 
 .video-card {
     background: white;
-    margin-bottom: 25px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
 video {
     width: 100%;
-    height: auto;
-    max-height: 360px; /* keeps video from growing too tall */
+    height: 300px;   /* fixed height so all equal */
+    object-fit: cover;
     border-radius: 8px;
 }
 
 footer {
-    background: #111;
+    background: black;
     color: white;
-    padding: 12px;
-    margin-top: 15px;
-    font-size: 14px;
+    text-align: center;
+    padding: 15px;
 }
 
