@@ -7,36 +7,39 @@ body {
 }
 
 header {
-    background: #111;
+    background: #0d0d0d;
     color: white;
-    padding: 20px;
+    padding: 18px 0;
+    font-size: 26px;
+    letter-spacing: 1px;
 }
 
 .container {
     width: 90%;
-    max-width: 700px;
-    margin: 30px auto;
+    max-width: 800px;
+    margin: 25px auto;
 }
 
 .video-card {
     background: white;
-    padding: 15px;
     margin-bottom: 25px;
-    border-radius: 12px;
+    padding: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 video {
     width: 100%;
-    height: auto;   /* Natural size */
-    max-height: 500px;  /* Page ko control karega */
-    border-radius: 10px;
+    height: auto;
+    max-height: 360px; /* keeps video from growing too tall */
+    border-radius: 8px;
 }
 
 footer {
-    background: black;
+    background: #111;
     color: white;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 14px;
 }
 
