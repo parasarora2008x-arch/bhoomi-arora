@@ -1,32 +1,47 @@
 body {
   margin: 0;
-  padding: 20px;
+  font-family: Arial, sans-serif;
   background: #f4f4f4;
 }
 
-/* FULL WIDTH 3 COLUMN GRID */
+/* HEADER SECTION */
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.contact {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* VIDEO GRID */
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  width: 100%;
+  padding: 20px;
 }
 
-/* Reel box */
 .video-box {
-  width: 100%;               /* column ka pura width le */
-  max-width: 320px;          /* reel size limit */
-  aspect-ratio: 9/16;        /* Instagram reel ratio */
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 9/16;
   background: black;
   border-radius: 12px;
   overflow: hidden;
 }
 
-/* Video fit */
 .video-box video {
   width: 100%;
   height: 100%;
-  object-fit: cover;   /* zoom fix */
+  object-fit: cover;
   display: block;
 }
 
